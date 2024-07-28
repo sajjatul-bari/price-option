@@ -1,8 +1,12 @@
 import "./App.css";
+import DaisyNav from "./component/DaisyNav/DaisyNav";
+import NevBar from "./component/NevBar/NevBar";
 
 function App() {
   return (
     <>
+    <NevBar></NevBar>
+    {/* <DaisyNav></DaisyNav> */}
       <h1 className="text-4xl bg-pink-500">Vite + React</h1>
 
       <div className="card bg-base-100 w-96 shadow-xl">
