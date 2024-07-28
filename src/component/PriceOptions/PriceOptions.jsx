@@ -9,7 +9,7 @@ const PriceOptions = () => {
             "features": [
                 "Access to gym equipment",
                 "Locker room access",
-                "1 free personal training session per month"
+                "1 free personal training "
             ]
         },
         {
@@ -20,7 +20,7 @@ const PriceOptions = () => {
                 "Access to gym equipment",
                 "Locker room access",
                 "Unlimited group fitness classes",
-                "2 free personal training sessions per month"
+                "2 free personal training "
             ]
         },
         {
@@ -31,9 +31,9 @@ const PriceOptions = () => {
                 "Access to gym equipment",
                 "Locker room access",
                 "Unlimited group fitness classes",
-                "4 free personal training sessions per month",
+                "4 free personal training ",
                 "Access to sauna and steam room",
-                "Priority class booking"
+                
             ]
         },
         {
@@ -44,21 +44,21 @@ const PriceOptions = () => {
                 "Access to gym equipment",
                 "Locker room access",
                 "Unlimited group fitness classes",
-                "8 free personal training sessions per month",
+                "8 free personal training ",
                 "Access to sauna and steam room",
-                "Priority class booking",
-                "Monthly health and wellness consultation",
-                "Exclusive VIP lounge access"
+                
             ]
         }
     ]
     
     return (
-        <div>
-            <h1 className="text-3xl">Best price in town</h1>
+        <div className="mt-10">
+            <h1 className="text-3xl font-bold text-center text-white mb-10">Best price in town</h1>
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-3">
             {
                 PriceOptions.map(option =><PriceOption key={option.id} option={option}></PriceOption>)
             }
+            </div>
         </div>
     );
 };
